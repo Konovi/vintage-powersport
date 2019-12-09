@@ -1,0 +1,603 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Default copy-paste CSS in the lines above*/
+
+html {
+  height: auto;
+  width: auto;
+}
+
+body {
+	background: url(https://i.imgur.com/04B8YGX.png)no-repeat center center fixed;
+	background-size: cover;
+	overflow: auto;
+}
+
+.header a {
+  	display: block;
+  	text-decoration: none;
+  	color: unset;
+  	padding-top: 10px;
+  	margin: 0px;
+  	border: 0px;
+}
+
+.header {
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: rgb(66, 66, 66);
+  	width: 100%;
+  	height: 75px;
+  	display: block;
+    position: fixed;
+  	text-decoration: none;
+  	float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 5;
+}
+
+/*Nav menu*/
+.nav {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+ 
+.nav .active {
+	color: #0c0c0c;
+	font-weight: bold;
+}
+
+.nav li {
+  	display: block;
+  	color: #787878;
+  	text-align: center;
+  	float: left;
+  	padding-left: 35px;
+  	padding-right: 35px;
+  	text-decoration: none;
+  	cursor: pointer;
+  	font-weight: 600;
+  	font-size: 23px;
+    z-index: 4;
+  	font-family: 'Open Sans', sans-serif;
+}
+
+.nav li:hover {
+  	color: white;
+  	text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+}
+
+/*Social icons*/
+.social_icons {
+	margin-right: 350px;	
+}
+
+.social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+}
+
+.social_icons i:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+}
+/*Search bar*/
+.wrapper {
+ 	position: absolute;
+ 	top: 15%;
+ 	right: 1%;
+ 	background: rgba(0, 0, 0, 0.2);
+ 	max-width: 250px;
+ 	width: 100%;
+ 	padding: 10px;
+ 	border-radius: 15px;
+ 	display: flex;
+}
+
+/*Search bar input*/
+.wrapper .input {
+	width: 85%;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/*Search bar magnifying glass button*/
+.searchbtn {
+	background: rgba(255, 255, 255, 0.4);
+	width: 15%;
+	margin-left: 5px;
+	border-radius: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.searchbtn .fa {
+	position: absolute;
+	top: 25%;
+	right: 25%;
+}
+
+/*Main titles*/
+.body_header li {
+  float: left;
+  position: absolute;
+  display: inline-block;
+  top: 120px;
+  margin-left: 80px;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#centered_header {
+  float: left;
+  display: inline-block;
+  margin-left: 650px;
+  font-weight: 700;
+  font-size: 36px;
+  font-style: italic;
+}
+
+/*Listings start here*/
+.listing_one {
+  position: relative;
+  float: left;
+  top: 200px;
+  left: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 280px;
+  z-index: 3;
+}
+
+.listing_one:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  cursor: pointer;
+}
+
+.listingbtn_one {
+  background: rgba(234, 235, 236, 0.9);
+  padding: 5px;
+  margin-left: 15px;
+  width: 132px;
+  height: 26px;
+  border-radius: 4px;
+  position: absolute;
+  top: 400px;
+  left: 36px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.listingbtn_one .fa {
+  position: absolute;
+}
+
+.listingbtn_one:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  background: rgba(0, 140, 186, 0.1);
+  cursor: pointer;
+}
+
+#text_one {
+  margin-left: 25px;
+}
+
+.listingbtn_two {
+  background: rgba(234, 235, 236, 0.9);
+  padding: 5px;
+  margin-left: 15px;
+  width: 132px;
+  height: 26px;
+  border-radius: 4px;
+  position: absolute;
+  top: 400px;
+  left: 184px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.listingbtn_two .fa {
+  position: absolute;
+}
+
+.listingbtn_two:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  background: rgba(0, 140, 186, 0.1);
+  cursor: pointer;
+}
+
+#text_two {
+  margin-left: 25px;
+}
+
+.car_content_one li {
+  display: flex;
+  position: relative;
+  top: 200px;
+  left: 55px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 32px;
+  width: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#title_one {
+  font-weight: 700;
+}
+
+#price_one {
+  font-style: italic;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.car_content_buyerinf_one li {
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 1100px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 32px;
+  width: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#title_two {
+  font-weight: 700; 
+}
+
+.body_content_one {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.body_content_two {
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: -100px;
+}
+
+.listing_two {
+  position: relative;
+  float: left;
+  top: 20px;
+  left: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 280px;
+  z-index: 3;
+}
+
+.listing_two:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  cursor: pointer;
+}
+
+.car_content_two li {
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 55px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 32px;
+  width: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#title_three {
+  font-weight: 700;
+}
+
+#price_two {
+  font-style: italic;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.car_content_buyerinf_two li {
+  display: flex;
+  position: relative;
+  top: -180px;
+  left: 1100px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 32px;
+  width: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#title_four {
+  font-weight: 700; 
+}
+
+.listingbtn_three {
+  background: rgba(234, 235, 236, 0.9);
+  padding: 5px;
+  margin-left: 15px;
+  width: 132px;
+  height: 26px;
+  border-radius: 4px;
+  position: absolute;
+  top: 694px;
+  left: 36px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.listingbtn_three .fa {
+  position: absolute;
+}
+
+.listingbtn_three:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  background: rgba(0, 140, 186, 0.1);
+  cursor: pointer;
+}
+
+#text_three {
+  margin-left: 25px;
+}
+
+.listingbtn_four {
+  background: rgba(234, 235, 236, 0.9);
+  padding: 5px;
+  margin-left: 15px;
+  width: 132px;
+  height: 26px;
+  border-radius: 4px;
+  position: absolute;
+  top: 694px;
+  left: 184px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.listingbtn_four .fa {
+  position: absolute;
+}
+
+.listingbtn_four:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  background: rgba(0, 140, 186, 0.1);
+  cursor: pointer;
+}
+
+#text_four {
+  margin-left: 25px;
+}
+
+.body_content_two {
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: -100px;
+}
+
+.listing_two {
+  position: relative;
+  float: left;
+  top: 20px;
+  left: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 280px;
+  z-index: 3;
+}
+
+.listing_two:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  cursor: pointer;
+}
+
+.car_content_three li {
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 55px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 32px;
+  width: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#title_five {
+  font-weight: 700;
+}
+
+#price_three {
+  font-style: italic;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.car_content_buyerinf_three li {
+  display: flex;
+  position: relative;
+  top: -180px;
+  left: 1100px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 32px;
+  width: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#title_six {
+  font-weight: 700; 
+}
+
+.listingbtn_five {
+  background: rgba(234, 235, 236, 0.9);
+  padding: 5px;
+  margin-left: 15px;
+  width: 132px;
+  height: 26px;
+  border-radius: 4px;
+  position: absolute;
+  top: 222px;
+  left: 36px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.listingbtn_five .fa {
+  position: absolute;
+}
+
+.listingbtn_five:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  background: rgba(0, 140, 186, 0.1);
+  cursor: pointer;
+}
+
+#text_four {
+  margin-left: 25px;
+}
+
+.listingbtn_six {
+  background: rgba(234, 235, 236, 0.9);
+  padding: 5px;
+  margin-left: 15px;
+  width: 132px;
+  height: 26px;
+  border-radius: 4px;
+  position: absolute;
+  top: 222px;
+  left: 184px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.listingbtn_six .fa {
+  position: absolute;
+}
+
+.listingbtn_six:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  background: rgba(0, 140, 186, 0.1);
+  cursor: pointer;
+}
+
+#text_five {
+  margin-left: 25px;
+}
+
+.body_content_three {
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 140px;
+}
+
+.listing_three {
+  position: relative;
+  float: left;
+  top: 20px;
+  left: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 280px;
+  z-index: 3;
+}
+
+.listing_three:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  cursor: pointer;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    margin-top: -65px;
+    overflow: hidden;
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    height: 205px;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 35px;
+ }
+
+ /*Fill footer with info, menu links and shop info*/

@@ -1,0 +1,1221 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Default copy-paste CSS in the lines above*/
+
+/* 
+  ##Device = PC Desktop / Laptop
+  ##Screen = Border width 1700px upwards
+*/
+
+@media (min-width: 1700px) {
+
+ body {
+	background: url(https://i.imgur.com/WCKAyQU.jpg)no-repeat center center fixed;
+	background-size: cover;
+	overflow: none;
+ }
+
+ .header a {
+  	display: block;
+  	text-decoration: none;
+  	color: unset;
+  	padding-top: 10px;
+  	margin: 0px;
+  	border: 0px;
+ }
+
+ .header {
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: rgba(211, 211, 211, 0.3);
+  	width: 100%;
+  	height: 75px;
+  	display: block;
+    position: fixed;
+  	text-decoration: none;
+  	float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 3;
+ }
+
+ .nav {
+    margin-left: 35px;
+    margin-top: 25px;
+}
+ 
+ .nav .active {
+	color: #0c0c0c;
+	font-weight: bold;
+ }
+
+ .nav li {
+  	display: block;
+  	color: #787878;
+  	text-align: center;
+  	float: left;
+  	padding-left: 35px;
+  	padding-right: 35px;
+  	text-decoration: none;
+  	cursor: pointer;
+  	font-weight: 600;
+  	font-size: 23px;
+  	font-family: 'Open Sans', sans-serif;
+ }
+
+ .nav li:hover {
+  	color: white;
+  	text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+  }
+ 
+ .logo img {
+    height: 175px;
+    width: 300px;
+    margin-top: 95px;
+    margin-left: 20px;
+ }
+
+ .featuring p {
+    font-size: 62px;
+    font-family: 'Permanent Marker', cursive;
+ }
+
+ .featuring {
+    display: inline-block;
+    position: 
+    width: 800px;
+    float: right;
+    margin-top: 150px;
+    margin-right: 420px;
+ }
+
+ .social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+ }
+
+ .social_icons i:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+ }
+
+ .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+ }
+ 
+ #linked {
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+ }
+
+ #linked a {
+  text-decoration: none;
+  color: unset;
+ }
+
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+
+ body {
+  background: url(https://i.imgur.com/WCKAyQU.jpg)no-repeat center center fixed;
+  background-size: cover;
+  overflow: none;
+ }
+
+ .header a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    padding-top: 10px;
+    margin: 0px;
+    border: 0px;
+ }
+
+ .header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 3;
+ }
+
+ .nav {
+    margin-left: 35px;
+    margin-top: 25px;
+}
+ 
+ .nav .active {
+  color: #0c0c0c;
+  font-weight: bold;
+ }
+
+ .nav li {
+    display: block;
+    color: #787878;
+    text-align: center;
+    float: left;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ .nav li:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+  }
+ 
+ .logo img {
+    height: 175px;
+    width: 300px;
+    margin-top: 95px;
+    margin-left: 20px;
+ }
+
+ .featuring p {
+    font-size: 62px;
+    font-family: 'Permanent Marker', cursive;
+ }
+
+ .featuring {
+    display: inline-block;
+    position: 
+    width: 800px;
+    float: right;
+    margin-top: 150px;
+    margin-right: 320px;
+ }
+
+ .social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+ }
+
+ .social_icons i:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+ }
+
+ .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+ }
+ 
+ #linked {
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+ }
+
+ #linked a {
+  text-decoration: none;
+  color: unset;
+ }
+
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+
+ body {
+  background: url(https://i.imgur.com/WCKAyQU.jpg)no-repeat center center fixed;
+  background-size: cover;
+  overflow: none;
+ }
+
+ .header a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    padding-top: 10px;
+    margin: 0px;
+    border: 0px;
+ }
+
+ .header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 3;
+ }
+
+ .nav {
+    margin-left: 35px;
+    margin-top: 25px;
+}
+ 
+ .nav .active {
+  color: #0c0c0c;
+  font-weight: bold;
+ }
+
+ .nav li {
+    display: block;
+    color: #787878;
+    text-align: center;
+    float: left;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ .nav li:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+  }
+ 
+ .logo img {
+    height: 150px;
+    width: 250px;
+    margin-top: 95px;
+    margin-left: 20px;
+ }
+
+ .featuring p {
+    font-size: 62px;
+    font-family: 'Permanent Marker', cursive;
+ }
+
+ .featuring {
+    display: inline-block;
+    position: 
+    width: 800px;
+    float: right;
+    margin-top: 150px;
+    margin-right: 220px;
+ }
+
+ .social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+ }
+
+ .social_icons i:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+ }
+
+ .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+ }
+ 
+ #linked {
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+ }
+
+ #linked a {
+  text-decoration: none;
+  color: unset;
+ }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+
+ body {
+  background: url(https://i.imgur.com/WCKAyQU.jpg)no-repeat center center fixed;
+  background-size: cover;
+  overflow: none;
+ }
+
+ .header a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    padding-top: 10px;
+    margin: 0px;
+    border: 0px;
+ }
+
+ .header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 3;
+ }
+
+ .nav {
+    margin-left: 35px;
+    margin-top: 25px;
+}
+ 
+ .nav .active {
+  color: #0c0c0c;
+  font-weight: bold;
+ }
+
+ .nav li {
+    display: block;
+    color: #787878;
+    text-align: center;
+    float: left;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ .nav li:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+  }
+ 
+ .logo img {
+    height: 150px;
+    width: 250px;
+    margin-top: 95px;
+    margin-left: 20px;
+ }
+
+ .featuring p {
+    font-size: 52px;
+    font-family: 'Permanent Marker', cursive;
+ }
+
+ .featuring {
+    display: inline-block;
+    position: 
+    width: 800px;
+    float: right;
+    margin-top: 150px;
+    margin-right: 150px;
+ }
+
+ .social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: none;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+ }
+
+ .social_icons i:hover {
+    color: white;
+    display: none;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+ }
+
+ .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+ }
+ 
+ #linked {
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+ }
+
+ #linked a {
+  text-decoration: none;
+  color: unset;
+ }
+
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+
+ body {
+  background: url(https://i.imgur.com/WCKAyQU.jpg)no-repeat center center fixed;
+  background-size: cover;
+  overflow: none;
+ }
+
+ .header a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    padding-top: 10px;
+    margin: 0px;
+    border: 0px;
+ }
+
+ .header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 3;
+ }
+
+ .nav {
+    margin-left: 35px;
+    margin-top: 25px;
+}
+ 
+ .nav .active {
+  color: #0c0c0c;
+  font-weight: bold;
+ }
+
+ .nav li {
+    display: block;
+    color: #787878;
+    text-align: center;
+    float: left;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ .nav li:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+  }
+ 
+ .logo img {
+    height: 125px;
+    width: 200px;
+    margin-top: 95px;
+    margin-left: 20px;
+ }
+
+ .featuring p {
+    font-size: 46px;
+    font-family: 'Permanent Marker', cursive;
+ }
+
+ .featuring {
+    display: inline-block;
+    position: 
+    width: 800px;
+    float: right;
+    margin-top: 150px;
+    margin-right: 100px;
+ }
+
+ .social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: none;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+ }
+
+ .social_icons i:hover {
+    color: white;
+    display: none;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+ }
+
+ .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 40px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+ }
+ 
+ #linked {
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+ }
+
+ #linked a {
+  text-decoration: none;
+  color: unset;
+ }
+
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+
+ body {
+  background: url(https://i.imgur.com/WCKAyQU.jpg)no-repeat center center fixed;
+  background-size: cover;
+  overflow: none;
+ }
+
+ .header a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    padding-top: 10px;
+    margin: 0px;
+    border: 0px;
+ }
+
+ .header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100%;
+    height: 50px;
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 3;
+ }
+
+ .nav {
+    margin-left: 35px;
+    margin-top: 10px;
+}
+ 
+ .nav .active {
+  color: #0c0c0c;
+  font-weight: bold;
+ }
+
+ .nav li {
+    display: block;
+    color: #787878;
+    text-align: center;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ .nav li:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+  }
+ 
+ .logo img {
+    height: 125px;
+    width: 200px;
+    margin-top: 95px;
+    margin-left: 20px;
+ }
+
+ .featuring p {
+    font-size: 38px;
+    font-family: 'Permanent Marker', cursive;
+ }
+
+ .featuring {
+    display: inline-block;
+    position: 
+    width: 800px;
+    float: right;
+    margin-top: 150px;
+    margin-right: 100px;
+ }
+
+ .social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: none;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+ }
+
+ .social_icons i:hover {
+    color: white;
+    display: none;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+ }
+
+ .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 40px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+ }
+ 
+ #linked {
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+ }
+
+ #linked a {
+  text-decoration: none;
+  color: unset;
+ }
+
+}
+
+@media (min-width: 480px) and (max-width: 700px) {
+
+ body {
+  background: url(https://i.imgur.com/WCKAyQU.jpg)no-repeat center center fixed;
+  background-size: cover;
+  overflow: none;
+ }
+
+ .header a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    padding-top: 10px;
+    margin: 0px;
+    border: 0px;
+ }
+
+ .header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100%;
+    height: 50px;
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 3;
+ }
+
+ .nav {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+ 
+ .nav .active {
+  color: #0c0c0c;
+  font-weight: bold;
+ }
+
+ .nav li {
+    display: block;
+    color: #787878;
+    text-align: center;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ .nav li:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+  }
+ 
+ .logo img {
+    height: 100px;
+    width: 150px;
+    margin-top: 95px;
+    margin-left: 20px;
+ }
+
+ .featuring p {
+    font-size: 26px;
+    font-family: 'Permanent Marker', cursive;
+ }
+
+ .featuring {
+    display: inline-block;
+    position: 
+    width: 800px;
+    float: right;
+    margin-top: 130px;
+    margin-right: 50px;
+ }
+
+ .social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: none;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+ }
+
+ .social_icons i:hover {
+    color: white;
+    display: none;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+ }
+
+ .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 40px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+ }
+ 
+ #linked {
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+    display: none;
+ }
+
+ #linked a {
+  text-decoration: none;
+  color: unset;
+ }
+
+}
+
+/* 
+  ##Device = Mobile Device
+  ##Screen = 320 x 480 Standard smartphone 
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+ body {
+  background: url(https://i.imgur.com/WCKAyQU.jpg)no-repeat center center fixed;
+  background-size: cover;
+  overflow: none;
+ }
+
+ .header a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    padding-top: 10px;
+    margin: 0px;
+    border: 0px;
+ }
+
+ .header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.3);
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    float: left;
+    box-shadow: 0 1px 7px 1px black;
+    z-index: 3;
+ }
+
+ .nav {
+    margin-left: 10px;
+}
+ 
+ .nav .active {
+  color: #0c0c0c;
+  font-weight: bold;
+ }
+
+ .nav li {
+    display: block;
+    color: #787878;
+    text-align: center;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ .nav li:hover {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 600ms ease;
+  }
+ 
+ .logo img {
+    height: 150px;
+    width: 250px;
+    margin-top: 95px;
+    margin-left: 40px;
+ }
+
+ .featuring p {
+    font-size: 34px;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+ }
+
+ .featuring {
+    display: inline-block;
+    position: 
+    width: 800px;
+    float: right;
+    margin-top: 130px;
+    margin-right: 50px;
+ }
+
+ .social_icons i {
+    font-size: 46px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: none;
+    float: right;
+    cursor: pointer;
+    color: #787878;
+ }
+
+ .social_icons i:hover {
+    color: white;
+    display: none;
+    text-shadow:
+      -1px -1px 0 #a9a9a9,  
+      1px -1px 0 #a9a9a9,
+      -1px 1px 0 #a9a9a9,
+      1px 1px 0 #a9a9a9;
+    transition: 800ms ease;
+ }
+
+ .footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 40px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    float: left;
+ }
+
+ .footer_content li {
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 5px;
+ }
+ 
+ #linked {
+    cursor: pointer;
+    font-weight: 500;
+    float: left;
+    display: none;
+ }
+
+ #linked a {
+  text-decoration: none;
+  color: unset;
+ }
+ 
+}
